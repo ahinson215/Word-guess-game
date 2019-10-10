@@ -5,9 +5,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Ocean Game</title>
-    <!---css tag here--> 
-    <link rel= "stylesheet" type= "text/css" href= "assets/css/style.css"> <!-------bootstrap tag here----> <!----javascript tag------------>
-</head>
+    <link rel= "stylesheet" type= "text/css" href= "assets/css/style.css"> 
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+     </head>
+    
+
 <body>
 <h1>Ocean Game!</h1>
 <h2>yeah!</h2>
@@ -15,32 +17,44 @@
 <div class = "container">
 
 
+<div class = row>
+    <div class="card" style="width: 18rem;">
+        <img class="card-img-top" src="assets/images/Clouds_over_the_Atlantic_Ocean.jpg" alt="Card image cap">
+       
+      </div>
+
+      <div class="card text-white bg-info mb-3" style="max-width: 18rem;">
+    
+        <div class="card-body">
+          <h4 class="card-title">Press any key to start!</h4>
+          <h4 class="card-text">
+            Wins:<span id = "wins"></span> 
+            <br>
+            
+            Current Word
+            <br>
+            <div id = "gameword"></div>
+            <br>
+            
+            Number of guesses remaining
+            <span id = "guessesleft"></span>
+            <br>
+            Letters already Guessed:
+            <span id = "lettersguessed"></span>
+
+          </h4>
+        </div>
+      </div>
+
+    </div>
 
 
-<div class= "col-lg-6">
-<img src = "assets/images/Clouds_over_the_Atlantic_Ocean.jpg"></div>
-
-<div class = "col-lg-6"><h2>Press any key to get started!</h2>
-<h2>Wins:<span id = "wins"></span> </h2>
-
-<h2>Current Word</h2>
-
-<span id = "gameword">_ _ _ _ _ _ _ _ _</span>
-
-<h2>Number of guesses remaining</h2>
-<span id = "guessesleft"></span>
-<h2>Letters already Guessed</h2>
-<span id = "lettersguessed"></span></div>
 
 
 
 
 
-
-
-
-
-
+<script src = "assets/javascript/game.js"></script>
 
 </div>
 
